@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="de"><head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <img src="icons/icon48.png" alt="" width="36" height="36">
+    <div>
+      <h1>GTA6 Blocker</h1>
+      <span id="pill" class="pill">Aktiv</span>
+    </div>
+  </header>
+
+  <section class="card main">
+    <div class="row">
+      <div>
+        <strong id="mainTitle">Blocker aktiv</strong>
+        <p id="mainSub">GTA-6-Inhalte werden ausgeblendet.</p>
+      </div>
+      <label class="switch big"><input type="checkbox" id="on"><span class="slider"></span></label>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="row">
+      <div>
+        <strong>Seiten sperren</strong>
+        <p>Kanäle, Videos, Such- &amp; Kategorieseiten</p>
+      </div>
+      <label class="switch"><input type="checkbox" id="pages"><span class="slider"></span></label>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="row head">
+      <strong>Stichwörter</strong>
+      <button id="reset" class="link">Zurücksetzen</button>
+    </div>
+    <div id="chips" class="chips"></div>
+    <div class="add">
+      <input id="newKw" type="text" placeholder="Stichwort hinzufügen …" maxlength="60" autocomplete="off">
+      <button id="addBtn" aria-label="Hinzufügen">+</button>
+    </div>
+    <p class="hint">Groß-/Kleinschreibung und Leerzeichen sind egal.</p>
+  </section>
+
+  <footer>Alles läuft lokal im Browser. Es werden keine Daten gesendet.</footer>
+
+  <script src="defaults.js"></script>
+  <script src="popup.js"></script>
+</body></html>
